@@ -1,0 +1,24 @@
+# qa.yaml
+
+kafka:
+  auto_offset_reset: "earliest"
+  max_poll_interval_ms: 150_000
+  max_poll_records: 5
+  session_timeout_ms: 75_000
+  scram_sha_512: "SCRAM-SHA-512"
+  sasl_plaintext: "SASL_PLAINTEXT"
+  security_protocol: "SASL_PLAINTEXT"
+  
+redis:
+  db: 0
+
+mongo:
+  collection_name: "qa_mask_v1"
+  collection_name_other: "qa_inference_v1"
+
+storage:
+  folder_name: "face"
+
+process:
+  data_identifier: "face"
+  name: "ml-face-qa"
